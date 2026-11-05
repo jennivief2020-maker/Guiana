@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guiana Is Not Empty: a response to Raleigh’s Discoverie</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans+Condensed:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef2ee;--ink:#1a1f1c;--river:#1f5a45;--ochre:#b9770e;--card:#fff;--line:#c4cfc6;--mute:#4a5750;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#101713;--ink:#e8eee9;--river:#4fb58d;--ochre:#e3a33f;--card:#18231d;--line:#2d3d34;--mute:#a3b3a9}}
+:root[data-theme="dark"]{--paper:#101713;--ink:#e8eee9;--river:#4fb58d;--ochre:#e3a33f;--card:#18231d;--line:#2d3d34;--mute:#a3b3a9}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 "IBM Plex Serif",Georgia,serif}
+h1,h2,h3,button,nav,.sans{font-family:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif}
+header,main,footer{max-width:740px;margin:0 auto;padding:0 20px}
+nav{padding-top:22px;font-size:16px;font-weight:500}
+nav a{color:var(--ink);margin-right:16px}
+.hero{padding:40px 0 30px}
+h1{font-size:clamp(54px,15vw,110px);line-height:.92;margin:0 0 20px;font-weight:700;letter-spacing:-.02em}
+.lede{font-size:21px;max-width:30em;margin:0 0 20px}
+.btn{display:inline-block;background:var(--river);color:#fff;border:0;border-radius:3px;padding:12px 20px;font-size:18px;font-weight:700;cursor:pointer;text-decoration:none}
+@media (prefers-color-scheme:dark){.btn{color:#08130d}}
+:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
+section{padding:34px 0;border-top:2px solid var(--ink)}
+h2{font-size:32px;line-height:1.1;margin:0 0 12px;font-weight:700}
+h3{font-size:21px;margin:0 0 4px}
+.cap{font:14px/1.5 "IBM Plex Sans Condensed",system-ui,sans-serif;color:var(--mute)}
+.claims{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.claims button{font-size:17px;font-weight:500;padding:10px 14px;border:1px solid var(--ink);background:var(--card);color:var(--ink);border-radius:3px;cursor:pointer;text-align:left}
+.claims button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+#out{background:var(--card);border-left:6px solid var(--ochre);padding:14px 18px;min-height:8em}
+#out p{margin:0 0 8px}
+.who{display:grid;gap:12px}
+.who div{background:var(--card);border:1px solid var(--line);padding:12px 16px;border-radius:3px}
+.who p{margin:2px 0 0}
+ul.plain{padding-left:20px}
+ul.plain li{margin:8px 0}
+label{display:block;margin:10px 0}
+input[type=text],input[type=email]{width:100%;max-width:380px;padding:10px;border:1px solid var(--ink);border-radius:3px;font:17px "IBM Plex Sans Condensed",system-ui,sans-serif;background:var(--card);color:var(--ink)}
+#msg{font-weight:600;margin-top:10px}
+footer{padding:24px 20px 44px;border-top:2px solid var(--ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Sections"><a href="#check">Check the claims</a><a href="#people">Who lives there</a><a href="#cost">The cost</a><a href="#act">Act</a></nav></header>
+<main>
+<div class="hero">
+  <h1>Guiana is not empty.</h1>
+  <p class="lede">In 1596 Sir Walter Raleigh published a pamphlet asking England to take Guiana. His pamphlet says the land is rich, easy to take and untouched. His own pages show it is full of people, and that he plans to rule them. We ask you not to listen.</p>
+  <p><a class="btn" href="#check">Test his claims</a></p>
+</div>
+
+<section id="check">
+  <h2>Raleigh’s claims, read against Raleigh</h2>
+  <p>Choose a claim. Each answer comes from the pamphlet itself. Page numbers are from the course PDF.</p>
+  <div class="claims" role="group" aria-label="Claims">
+    <button type="button" aria-pressed="false" data-k="a">“It is untouched”</button>
+    <button type="button" aria-pressed="false" data-k="b">“I come to free you from Spain”</button>
+    <button type="button" aria-pressed="false" data-k="c">“It is full of gold”</button>
+    <button type="button" aria-pressed="false" data-k="d">“It will be easy”</button>
+    <button type="button" aria-pressed="false" data-k="e">“My men were kind”</button>
+  </div>
+  <div id="out" aria-live="polite"><p>Choose a claim above.</p></div>
+</section>
+
+<section id="people">
+  <h2>People Raleigh names</h2>
+  <p>The pamphlet is the only source here, and we hear these people through Raleigh and his interpreters. Even so, they are in every chapter.</p>
+  <div class="who">
+    <div><h3>Topiawari</h3><p>A very old chief, described as wise. He sighs over the loss of his country and liberty when he talks of conquest from the mountains (p. 107). Raleigh later takes his son to England (p. 111).</p></div>
+    <div><h3>Morequito</h3><p>A chief put to death by the Spanish commander Berrio (pp. 105, 109). His uncle Topiawari becomes Raleigh’s chief ally.</p></div>
+    <div><h3>The Tivitivas</h3><p>Houses on the ground in summer, in the trees in winter, because the river floods. Raleigh calls them handsome and brave (pp. 94–95).</p></div>
+    <div><h3>The Arwacas, Nepoios and Orenoqueponi</h3><p>Pilots, traders and hosts. Raleigh could not have travelled without them (pp. 93, 102).</p></div>
+  </div>
+</section>
+
+<section id="cost">
+  <h2>What his plan would cost</h2>
+  <h3>For people</h3>
+  <ul class="plain">
+    <li>Raleigh asks the Queen to “hold it as tributary,” meaning the people would pay her, or to conquer and keep it (p. 123).</li>
+    <li>He says soldiers will “fight for gold” and pay themselves with plates of it (p. 119).</li>
+    <li>His own men burned the Spanish town of San Joseph and killed its guard (p. 83).</li>
+  </ul>
+  <h3>For land and rivers</h3>
+  <ul class="plain">
+    <li>He praises Guiana because its earth is “not torn,” its mines not broken and its temples not pulled down (p. 120). Then he proposes forts, mines and a soil for sugar and ginger (pp. 120–121).</li>
+    <li>He discusses digging up graves for treasure, and says doing it early would have lost him his allies (p. 118).</li>
+  </ul>
+  <h3>For truth</h3>
+  <ul class="plain">
+    <li>The shining stones he shows as proof turned out to be coloured stones with no gold in them (p. 110).</li>
+    <li>He insists on headless men, then says it matters little whether they are real (p. 111).</li>
+  </ul>
+</section>
+
+<section id="act">
+  <h2>What you can do</h2>
+  <ul class="plain">
+    <li>Do not invest in the voyage. He promises a London “Contractation house” richer than Seville’s (p. 122).</li>
+    <li>Ask who gains. Raleigh’s own list is the Queen, the soldiers and the captains he would make kings (p. 123).</li>
+    <li>Read the pamphlet and look for the people he names.</li>
+  </ul>
+  <p>Add your name to the refusal.</p>
+  <label>Your name<br><input type="text" id="nm" autocomplete="name"></label>
+  <label>Email<br><input type="email" id="em" autocomplete="email"></label>
+  <button type="button" class="btn" id="go">Add my name</button>
+  <p id="msg" role="status"></p>
+  <p class="cap">Demonstration page for a university assignment. No names are collected.</p>
+</section>
+</main>
+<footer class="cap">Source: Walter Ralegh, <em>The Discoverie of Guiana</em> (1596), course PDF, pp. 80–123. Quotations are short and paraphrase is marked by page. Check wording against your edition.</footer>
+<script>
+(function(){
+var D={
+a:["Raleigh says Guiana “hath yet her Maidenhead,” never sacked or wrought (p. 120).","Yet his pages are full of towns, lords and traders. Topiawari is old and wise, and the Tivitivas build houses on trees (pp. 94–95, 108). A land with people and cities is not untouched. The word also treats the country as something to be taken."],
+b:["Raleigh tells chiefs he is the servant of a Queen who frees nations from Spanish tyranny (p. 83).","He does report real Spanish cruelty, including chains and burning on the bodies of chiefs (p. 82). But his own plan is for the Queen to hold Guiana as tributary or to conquer it (p. 123). Freedom from one ruler is offered together with another."],
+c:["Raleigh says Guiana has more gold than Peru (pp. 85, 119).","Then his own tests fail. The stones he brings are coloured and hold no gold (p. 110). He leaves the mine because the rivers are rising and because he fears other ships would follow (p. 100). The proof is thin."],
+d:["Raleigh says the empire has no shot or iron weapon and can easily be conquered (p. 122).","He also says the land is hard to enter, with floods and a heat that nearly breaks his men (pp. 97, 121). He describes warriors with bows, clubs and poisoned arrows (pp. 105, 111). “Easy” is a sales line."],
+e:["Raleigh says his men never touched the women and that stolen goods were returned (p. 101).","The same account has him threaten to cut off an old man’s head if his pilot is not returned (p. 94), take a chief’s son to England (p. 111), and discuss digging graves for treasure (p. 118). He is the only witness for his own kindness."]};
+var bs=document.querySelectorAll(".claims button"),o=document.getElementById("out");
+bs.forEach(function(b){b.addEventListener("click",function(){
+bs.forEach(function(x){x.setAttribute("aria-pressed","false")});
+b.setAttribute("aria-pressed","true");
+var d=D[b.dataset.k];
+o.innerHTML="";
+var p1=document.createElement("p");p1.innerHTML="<strong>Raleigh:</strong> "+d[0];
+var p2=document.createElement("p");p2.innerHTML="<strong>Raleigh’s own pages:</strong> "+d[1];
+o.appendChild(p1);o.appendChild(p2);});});
+document.getElementById("go").addEventListener("click",function(){
+var m=document.getElementById("msg"),n=document.getElementById("nm").value.trim(),e=document.getElementById("em").value.trim();
+if(!n||e.indexOf("@")<1){m.textContent="Please add your name and a valid email address.";return;}
+m.textContent="Thank you, "+n+". Your name is added to the refusal.";});
+})();
+</script>
+</body>
+</html>
