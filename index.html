@@ -6,6 +6,12 @@
 <title>Guiana Is Not Empty: a response to Raleigh’s Discoverie</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans+Condensed:wght@500;700&display=swap" rel="stylesheet">
 <style>
+.side{display:none}
+@media (min-width:1200px){
+.side{display:block;position:fixed;top:140px;width:200px;height:auto;border:2px solid var(--ink)}
+.left{right:calc(50% + 390px)}
+.right{left:calc(50% + 390px)}
+}
 :root{--paper:#eef2ee;--ink:#1a1f1c;--river:#1f5a45;--ochre:#b9770e;--card:#fff;--line:#c4cfc6;--mute:#4a5750;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#101713;--ink:#e8eee9;--river:#4fb58d;--ochre:#e3a33f;--card:#18231d;--line:#2d3d34;--mute:#a3b3a9}}
@@ -45,17 +51,19 @@ footer{padding:24px 20px 44px;border-top:2px solid var(--ink)}
 </style>
 </head>
 <body>
+<img class="side left" src="left.jpg" alt="Describe the left picture">
+<img class="side right" src="left.jpg" alt="Describe the right picture">
 <header><nav aria-label="Sections"><a href="#check">Check the claims</a><a href="#people">Who lives there</a><a href="#cost">The cost</a><a href="#act">Act</a></nav></header>
 <main>
 <div class="hero">
   <h1>Guiana is not empty.</h1>
-  <p class="lede">In 1596 Sir Walter Raleigh published a pamphlet asking England to take Guiana. His pamphlet says the land is rich, easy to take and untouched. His own pages show it is full of people, and that he plans to rule them. We ask you not to listen.</p>
+  <p class="lede">Sir Walter Raleigh published a pamphlet asking England to take Guiana. His pamphlet says the land is rich, easy to take and untouched. His own pages show it is full of people, and that he plans to rule them. We ask you not to listen.</p>
   <p><a class="btn" href="#check">Test his claims</a></p>
 </div>
 
 <section id="check">
   <h2>Raleigh’s claims, read against Raleigh</h2>
-  <p>Choose a claim. Each answer comes from the pamphlet itself. Page numbers are from the course PDF.</p>
+  <p>Choose a claim. Each answer comes from the pamphlet itself.</p>
   <div class="claims" role="group" aria-label="Claims">
     <button type="button" aria-pressed="false" data-k="a">“It is untouched”</button>
     <button type="button" aria-pressed="false" data-k="b">“I come to free you from Spain”</button>
